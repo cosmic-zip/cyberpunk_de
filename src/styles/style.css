@@ -11,6 +11,10 @@ body {
     background-color: var(--main-bg);
     color: var(--main-text);
     font-family: monospace;
+    background-image: url("../wallpapers/wp1.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
@@ -103,15 +107,12 @@ main {
     margin: 15px;
     border: solid 2px var(--main-color);
     box-shadow: 10px 10px var(--main-color);
-    background-image: url("../assets/cpy.webp");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .sidebar {
     width: 360px;
     border-right: solid 2px var(--main-color);
+    backdrop-filter: blur(10px);
 }
 
 .clock-widget {

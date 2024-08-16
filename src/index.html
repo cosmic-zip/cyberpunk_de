@@ -8,17 +8,17 @@
         <script src="scripts/jquery.js"></script>
         <script src="scripts/index.js"></script>
     </head>
-    <body>
+    <body id="changeBackground">
         <header><nav class="main-ctn start-menu">
     <div>
         <button id="main_apps_menu" class="main_apps_menu">Apps</button>
     </div>
     <div>
-        <button class="taskbar-btn" onclick="sys_switch_desktop(1)">[1]</button>
-        <button class="taskbar-btn" onclick="sys_switch_desktop(2)">[2]</button>
-        <button class="taskbar-btn" onclick="sys_switch_desktop(3)">[3]</button>
-        <button class="taskbar-btn" onclick="sys_switch_desktop(4)">[4]</button>
-        <button class="taskbar-btn" onclick="sys_switch_desktop(5)">[5]</button>
+        <button class="taskbar-btn" data-number="1">[1]</button>
+        <button class="taskbar-btn" data-number="2">[2]</button>
+        <button class="taskbar-btn" data-number="3">[3]</button>
+        <button class="taskbar-btn" data-number="4">[4]</button>
+        <button class="taskbar-btn" data-number="5">[5]</button>
     </div>
 </nav>
 </header>
@@ -28,8 +28,11 @@
     <h1 id="clock"></h1>
 </div>
 <div class="btn-ctn">
-    <button class="btn-some morp">Terminal</button>
-    <button class="btn-some morp">Browser</button>
+    
+<button id="Browser" class="btn-some morp">Browser</button>
+
+<button id="Terminal" class="btn-some morp">Terminal</button>
+
     <button class="btn-some morp">Editor</button>
     <button class="btn-some morp">Office</button>
     <button class="btn-some morp">!NetMaidCafe</button>
@@ -42,7 +45,6 @@
 </div>
 </div>
                 <div class="content">
-
 <script>
     $(document).ready(function () {
         $("#Browser-close").click(function () {
@@ -122,6 +124,7 @@
     </div>
     <div class="boxed-window app-scroll">terminal</div>
 </section>
+
 </div>
             </main>
         </section>
