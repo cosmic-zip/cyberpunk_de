@@ -96,12 +96,6 @@ main {
     border-right: solid 2px var(--main-color);
 }
 
-.clock {
-    text-align: center;
-    margin: 20px;
-    font-family: "Courier New", Courier, monospace;
-}
-
 .btn-ctn {
     margin-top: 40px;
     margin-left: 20px;
@@ -138,7 +132,7 @@ main {
 
 .content {
     padding: 40px;
-    overflow-y: scroll;
+    overflow: hidden !important;
     font-size: 15px;
     width: inherit;
 }

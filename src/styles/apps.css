@@ -1,0 +1,46 @@
+.app {
+}
+
+.app-scroll {
+    overflow-y: scroll !important;
+}
+
+.app-bar {
+    display: flex;
+    justify-content: end;
+}
+
+.app-knot {
+    width: 200px;
+    display: flex;
+    justify-content: end;
+    background: var(--main-color);
+    align-items: center;
+}
+
+.app-window-name {
+    color: var(--main-bg);
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.app-btn {
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-bg);
+    color: aliceblue;
+    font-weight: bold;
+    border: solid 2px var(--main-color);
+}
+
+.app-btn:hover {
+    background-color: red;
+}
+
+.app-btn .app-active {
+}
+
+.browser {
+    display: flex;
+    justify-content: center;
+}

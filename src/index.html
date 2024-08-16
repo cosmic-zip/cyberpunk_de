@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="scripts/style.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/apps.css" />
         <script src="scripts/index.js"></script>
         <script src="scripts/jquery.js"></script>
     </head>
@@ -43,38 +44,15 @@
                     </div>
                 </div>
                 <div class="content">
-                    <section id="browser" class="app app-active browser">
-                        <div>
-                            <nav class="search main-ctn">
-                                <div class="main-ctn">
-                                    <button>Back</button>
-                                    <button>Foward</button>
-                                </div>
-                                <div class="main-ctn search-bar">
-                                    <form method="POST" action="#">
-                                        <button type="submit">Net!</button>
-                                        <input
-                                            type="text"
-                                            placeholder="Search in the net now!"
-                                        />
-                                    </form>
-                                </div>
-                                <div class="main-ctn">
-                                    <button>Home</button>
-                                    <button>Setting</button>
-                                </div>
-                            </nav>
-                            <div class="boxed-window">
-                                <iframe
-                                    src="https://example.com"
-                                    width="100%"
-                                    ,
-                                    height="100%"
-                                    ,
-                                    style="border: none"
-                                ></iframe>
+                    <section class="app terminal">
+                        <div class="app-bar">
+                            <div class="app-knot">
+                                <span class="app-window-name">Terminal</span>
+                                <button class="app-btn">X</button>
+                                <button class="app-btn">-</button>
                             </div>
                         </div>
+                        <div class="boxed-window app-scroll">terminal</div>
                     </section>
                 </div>
             </main>
