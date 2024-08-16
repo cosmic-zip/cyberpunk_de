@@ -141,4 +141,6 @@ main {
     overflow: hidden !important;
     font-size: 15px;
     width: inherit;
+    display: flex;
+    justify-content: space-evenly;
 }

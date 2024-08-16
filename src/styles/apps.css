@@ -1,4 +1,6 @@
 .app {
+    margin: 10px;
+    width: 100%;
 }
 
 .app-scroll {
