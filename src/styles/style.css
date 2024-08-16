@@ -98,6 +98,7 @@ header {
     border: solid 5px var(--main-color);
     height: 85vh;
     padding: 5px;
+    background-color: #000000b8;
 }
 
 main {

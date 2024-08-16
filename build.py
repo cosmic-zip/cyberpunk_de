@@ -18,7 +18,16 @@ def build_index():
     ui = read_file("src/system/ui.html")
     start = read_file("src/system/start.html")
 
-    menu_button = '<button id="@@APP_NAME" class="btn-some morp">@@APP_NAME</button>'
+    menu_button = '''
+    <script>
+        $(document).ready(function () {
+        $("#@@APP_NAME-btn").click(function () {
+            $("#@@APP_NAME").toggle();
+        });
+        });
+    </script>
+    <button id="@@APP_NAME-btn" class="btn-some morp">@@APP_NAME</button>
+    '''
     menu_items = ""
     windows = ""
 

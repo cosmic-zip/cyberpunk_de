@@ -29,9 +29,27 @@
 </div>
 <div class="btn-ctn">
     
-<button id="Browser" class="btn-some morp">Browser</button>
 
-<button id="Terminal" class="btn-some morp">Terminal</button>
+    <script>
+        $(document).ready(function () {
+        $("#Browser-btn").click(function () {
+            $("#Browser").toggle();
+        });
+        });
+    </script>
+    <button id="Browser-btn" class="btn-some morp">Browser</button>
+    
+
+
+    <script>
+        $(document).ready(function () {
+        $("#Terminal-btn").click(function () {
+            $("#Terminal").toggle();
+        });
+        });
+    </script>
+    <button id="Terminal-btn" class="btn-some morp">Terminal</button>
+    
 
     <button class="btn-some morp">Editor</button>
     <button class="btn-some morp">Office</button>
@@ -63,16 +81,6 @@
         iframeDoc.body.innerHTML = myString;
     });
 </script>
-
-<style>
-    .browser-iframe {
-        border: none;
-        margin-top: 40px;
-        width: 100%;
-        height: 100%;
-        background-color: #000000b5;
-    }
-</style>
 
 <section id="Browser" class="app Browser">
     <div class="app-bar">
