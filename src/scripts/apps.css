@@ -1,0 +1,10 @@
+.app {
+}
+
+.app-active {
+}
+
+.browser {
+    display: flex;
+    justify-content: center;
+}

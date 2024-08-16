@@ -9,7 +9,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: var(--main-bg);
-    background-image: url("./assets/bg.png");
+    background-image: url("../assets/bg.png");
     color: var(--main-text);
     font-family: monospace;
 }
@@ -17,13 +17,21 @@ body {
 header {
 }
 
-.search {
+.start-menu {
     background: var(--main-color);
     height: 50px;
-    margin: 20px 20px 0px 20px;
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px 0px 10px;
+}
+
+.search {
+    background: var(--main-color);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    width: 60vw;
 }
 
 nav button {
@@ -62,6 +70,12 @@ nav input {
     display: flex;
 }
 
+.boxed-window {
+    border: solid 5px var(--main-color);
+    height: 75vh;
+    padding: 5px;
+}
+
 main {
     width: 100%;
     height: 88vh;
@@ -69,7 +83,7 @@ main {
     margin: 20px;
     border: solid 2px var(--main-color);
     box-shadow: 12px 12px var(--main-color);
-    background-image: url("assets/cpy.webp");
+    background-image: url("../assets/cpy.webp");
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -104,12 +118,12 @@ main {
     margin-top: 10px;
     color: black;
     border: none;
-    background-image: url("assets/1.png");
+    background-image: url("../assets/1.png");
     background-color: var(--main-color);
 }
 
 .btn-some:hover {
-    background-image: url("assets/3.png");
+    background-image: url("../assets/3.png");
     margin-left: 10px;
 }
 
@@ -126,4 +140,5 @@ main {
     padding: 40px;
     overflow-y: scroll;
     font-size: 15px;
+    width: inherit;
 }

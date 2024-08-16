@@ -7,26 +7,20 @@
         <title>HTML 5 Boilerplate</title>
         <link rel="stylesheet" href="scripts/style.css" />
         <script src="scripts/index.js"></script>
+        <script src="scripts/jquery.js"></script>
     </head>
     <body>
         <header>
-            <nav class="search main-ctn">
-                <div class="main-ctn">
-                    <button>Back</button>
-                    <button>Foward</button>
+            <nav class="main-ctn start-menu">
+                <div>
+                    <button>Start</button>
                 </div>
-                <div class="main-ctn search-bar">
-                    <form method="POST" action="#">
-                        <button type="submit">Net!</button>
-                        <input
-                            type="text"
-                            placeholder="Search in the net now!"
-                        />
-                    </form>
-                </div>
-                <div class="main-ctn">
-                    <button>Home</button>
-                    <button>Setting</button>
+                <div>
+                    <button>[1]</button>
+                    <button>[2]</button>
+                    <button>[3]</button>
+                    <button>[4]</button>
+                    <button>[5]</button>
                 </div>
             </nav>
         </header>
@@ -40,18 +34,50 @@
                         <h1>12:00:00 AM</h1>
                     </div>
                     <div class="btn-ctn">
-                        <button class="btn-some morp">Some function</button>
-                        <button class="btn-some morp">Some function</button>
-                        <button class="btn-some morp">Some function</button>
-                        <button class="btn-some morp">Some function</button>
-                        <button class="btn-some morp">Some function</button>
-                        <button class="btn-some morp">Some function</button>
-                        <button class="btn-some morp">Some function</button>
-                        <button class="btn-some morp">Some function</button>
+                        <button class="btn-some morp">Terminal</button>
+                        <button class="btn-some morp">Browser</button>
+                        <button class="btn-some morp">Editor</button>
+                        <button class="btn-some morp">Office</button>
+                        <button class="btn-some morp">!NetMaidCafe</button>
+                        <button class="btn-some morp">Netwatch</button>
+                        <button class="btn-some morp">Setting</button>
+                        <button class="btn-some morp">Games</button>
                     </div>
                 </div>
                 <div class="content">
-                    <!-- <iframe src="https://www.example.com"></iframe> -->
+                    <section id="browser" class="app app-active browser">
+                        <div>
+                            <nav class="search main-ctn">
+                                <div class="main-ctn">
+                                    <button>Back</button>
+                                    <button>Foward</button>
+                                </div>
+                                <div class="main-ctn search-bar">
+                                    <form method="POST" action="#">
+                                        <button type="submit">Net!</button>
+                                        <input
+                                            type="text"
+                                            placeholder="Search in the net now!"
+                                        />
+                                    </form>
+                                </div>
+                                <div class="main-ctn">
+                                    <button>Home</button>
+                                    <button>Setting</button>
+                                </div>
+                            </nav>
+                            <div class="boxed-window">
+                                <iframe
+                                    src="https://example.com"
+                                    width="100%"
+                                    ,
+                                    height="100%"
+                                    ,
+                                    style="border: none"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </main>
         </section>
