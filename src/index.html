@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="styles/apps.css" />
-        <script src="scripts/index.js"></script>
         <script src="scripts/jquery.js"></script>
+        <script src="scripts/index.js"></script>
     </head>
     <body>
         <header><nav class="main-ctn start-menu">
     <div>
-        <button class="main_apps_menu">Apps</button>
+        <button id="main_apps_menu" class="main_apps_menu">Apps</button>
     </div>
     <div>
         <button class="taskbar-btn" onclick="sys_switch_desktop(1)">[1]</button>
@@ -24,10 +24,7 @@
 </header>
         <section class="main-ctn">
             <main>
-                <div class="sidebar"><div class="cyber">
-    <img src="" />
-</div>
-<div class="clock">
+                <div id="sidebar" class="sidebar"><div class="clock">
     <h1>12:00:00 AM</h1>
 </div>
 <div class="btn-ctn">
@@ -40,15 +37,25 @@
     <button class="btn-some morp">Setting</button>
     <button class="btn-some morp">Games</button>
 </div>
+<div class="cyber">
+    <img src="../assets/eye.gif" />
+</div>
 </div>
                 <div class="content">
 
+<script>
+    $(document).ready(function () {
+        $("#Browser-close").click(function () {
+            $("#Browser").toggle();
+        });
+    });
+</script>
 <section id="Browser" class="app Browser">
     <div class="app-bar">
         <div class="app-knot">
             <span class="app-window-name">Browser</span>
-            <button class="app-btn">X</button>
-            <button class="app-btn">-</button>
+            <button id="Browser-close" class="app-btn">X</button>
+            <button id="Browser-close" class="app-btn">-</button>
         </div>
     </div>
     <nav class="app-toolbar main-ctn">
@@ -84,12 +91,19 @@
 </section>
 
 
-<section class="app terminal">
+<script>
+    $(document).ready(function () {
+        $("#Terminal-close").click(function () {
+            $("#Terminal").toggle();
+        });
+    });
+</script>
+<section id="Terminal" class="app Terminal">
     <div class="app-bar">
         <div class="app-knot">
             <span class="app-window-name">Terminal</span>
-            <button class="app-btn">X</button>
-            <button class="app-btn">-</button>
+            <button id="Terminal-close" class="app-btn">X</button>
+            <button id="Terminal-close" class="app-btn">-</button>
         </div>
     </div>
     <div class="boxed-window app-scroll">terminal</div>
