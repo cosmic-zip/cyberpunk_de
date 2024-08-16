@@ -24,8 +24,8 @@
 </header>
         <section class="main-ctn">
             <main>
-                <div id="sidebar" class="sidebar"><div class="clock">
-    <h1>12:00:00 AM</h1>
+                <div id="sidebar" class="sidebar"><div class="clock-widget">
+    <h1 id="clock"></h1>
 </div>
 <div class="btn-ctn">
     <button class="btn-some morp">Terminal</button>
@@ -61,6 +61,17 @@
         iframeDoc.body.innerHTML = myString;
     });
 </script>
+
+<style>
+    .browser-iframe {
+        border: none;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+        background-color: #000000b5;
+    }
+</style>
+
 <section id="Browser" class="app Browser">
     <div class="app-bar">
         <div class="app-knot">
@@ -89,10 +100,7 @@
         </div>
     </nav>
     <div class="boxed-window app-scroll">
-        <iframe
-            id="browserIframe"
-            style="border: none; margin-top: 40px; width: 100%; height: 100%"
-        ></iframe>
+        <iframe id="browserIframe" class="browser-iframe"></iframe>
     </div>
 </section>
 
