@@ -163,3 +163,8 @@ main {
     display: flex;
     justify-content: space-evenly;
 }
+
+.sidebar,
+.app {
+    display: none;
+}
