@@ -9,7 +9,6 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: var(--main-bg);
-    background-image: url("../assets/bg.png");
     color: var(--main-text);
     font-family: monospace;
 }
@@ -19,22 +18,43 @@ header {
 
 .start-menu {
     background: var(--main-color);
-    height: 50px;
+    height: 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 15px;
 }
 
-.search {
-    background: var(--main-color);
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    width: 60vw;
+.taskbar-btn {
+    height: 35px;
+    width: 35px;
+    background-color: var(--main-bg);
+    color: aliceblue;
+    font-weight: bold;
+    border: solid 2px var(--main-color);
 }
 
-nav button {
+.taskbar-btn:hover {
+    background-color: var(--main-color);
+    color: var(--main-bg);
+    border: solid 2px var(--main-bg);
+}
+
+.main_apps_menu {
+    width: 54px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    color: aliceblue;
+    background-color: var(--main-bg);
+    border: solid 2px var(--main-color);
+    font-weight: bolder;
+}
+
+.main_apps_menu:hover {
+    background-color: red;
+}
+
+.search-btn {
     border: none;
     height: 30px;
     width: 60px;
@@ -44,11 +64,11 @@ nav button {
     border-left: solid 2px var(--main-color);
 }
 
-nav button:hover {
+.search-btn:hover {
     background-color: red;
 }
 
-nav input {
+.search-input {
     height: 30px;
     width: 30vw;
     border: none;
@@ -78,11 +98,11 @@ nav input {
 
 main {
     width: 100%;
-    height: 88vh;
+    height: 94vh;
     display: flex;
-    margin: 20px;
+    margin: 15px;
     border: solid 2px var(--main-color);
-    box-shadow: 12px 12px var(--main-color);
+    box-shadow: 10px 10px var(--main-color);
     background-image: url("../assets/cpy.webp");
     background-repeat: repeat;
     background-position: center;
@@ -137,7 +157,6 @@ main {
 }
 
 .content {
-    padding: 40px;
     overflow: hidden !important;
     font-size: 15px;
     width: inherit;

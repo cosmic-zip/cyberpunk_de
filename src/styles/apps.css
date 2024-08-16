@@ -42,6 +42,18 @@
 .app-btn .app-active {
 }
 
+.app-toolbar {
+    background: var(--main-color);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    width: 60vw;
+    z-index: 0;
+    margin-bottom: -50px;
+    position: relative;
+}
+
 .browser {
     display: flex;
     justify-content: center;
