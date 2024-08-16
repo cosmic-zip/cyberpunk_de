@@ -92,7 +92,7 @@ header {
 
 .boxed-window {
     border: solid 5px var(--main-color);
-    height: 75vh;
+    height: 85vh;
     padding: 5px;
 }
 

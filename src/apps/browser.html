@@ -4,6 +4,17 @@
             $("#@@APP_NAME").toggle();
         });
     });
+
+    $(document).ready(function () {
+        var myString = "This is the content to be injected into the iframe.";
+        var iframe = $("#browserIframe"); // Replace 'myIframe' with your iframe's ID
+
+        // Access the iframe's document
+        var iframeDoc = iframe[0].contentWindow.document;
+
+        // Set the iframe's content to the string
+        iframeDoc.body.innerHTML = myString;
+    });
 </script>
 <section id="@@APP_NAME" class="app @@APP_NAME">
     <div class="app-bar">
@@ -19,14 +30,13 @@
             <button class="search-btn">Foward</button>
         </div>
         <div class="main-ctn search-bar">
-            <form method="POST" action="#">
-                <button class="search-btn" type="submit">Net!</button>
-                <input
-                    type="text"
-                    class="search-input"
-                    placeholder="Search in the net now!"
-                />
-            </form>
+            <button id="browse" class="search-btn" type="submit">Net!</button>
+            <input
+                id="query"
+                type="text"
+                class="search-input"
+                placeholder="Search in the net now!"
+            />
         </div>
         <div class="main-ctn">
             <button class="search-btn">Home</button>
@@ -35,12 +45,8 @@
     </nav>
     <div class="boxed-window app-scroll">
         <iframe
-            src="https://example.com"
-            width="100%"
-            ,
-            height="100%"
-            ,
-            style="border: none; margin-top: 40px"
+            id="browserIframe"
+            style="border: none; margin-top: 40px; width: 100%; height: 100%"
         ></iframe>
     </div>
 </section>
