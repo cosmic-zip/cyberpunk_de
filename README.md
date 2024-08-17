@@ -4,15 +4,20 @@
 
 #### A Complete Micro Desktop Environment Inspired by Cyberpunk 2077, Written in **Rust**
 
-CyperPunk DE is a unique micro desktop environment inspired by Cyberpunk 2077. This project is written in Rust and offers a powerful and sleek interface for netrunners. Originally part of the Witch_Craft netrunner firmware, also known as the Universal Hacking Tool and Automation Engine, CyperPunk DE integrates seamlessly with Witch_Craft through both terminal and pre-installed applications.
+CyperPunk DE is a unique micro desktop environment inspired by Cyberpunk 2077. This project is written in Rust and offers a
+powerful and sleek interface for netrunners. Originally part of the Witch_Craft netrunner firmware the Universal Hacking Tool and Automation Engine,
+CyperPunk DE integrates seamlessly with Witch_Craft through both terminal and pre-installed app.
 
 #### Wait, It's All HTML? Always Has Been!
 
-Many desktop environments, including GNOME, use a combination of JavaScript and HTML/XML or similar markup languages. The exception lies in GUIs that utilize OpenGL or other 3D engines. CyperPunk DE follows a similar approach, with its apps written in HTML, CSS, and small amounts of JavaScript, incorporating libraries such as QuillJS and jQuery.
+Many desktop environments, including GNOME, use a combination of JavaScript and HTML/XML or similar markup languages.
+The exception lies in GUIs that utilize OpenGL or other 3D engines. CyperPunk DE follows a similar approach, with its
+apps written in HTML, CSS, and small amounts of JavaScript, using libraries such as QuillJS and jQuery.
 
 #### Then, It Must Be Slow? No, It's Not!
 
-CyperPunk DE is built using Tauri, with its core in Rust and a CLI leveraging Node.js. This combination ensures a lightweight and fast environment.
+CyperPunk DE is built using Tauri, with its core in Rust and a CLI leveraging Node.js. This combination ensures a
+lightweight and fast environment.
 
 #### Does It Use Electron? No.
 
