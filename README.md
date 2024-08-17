@@ -1,30 +1,28 @@
-# Tauri + Vanilla
+!["CyberDE"](./docs/cpde.png)
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+### CyperPunk DE: The Ultimate Netrunner Choice!
 
-## Recommended IDE Setup
+#### A Complete Micro Desktop Environment Inspired by Cyberpunk 2077, Written in **Rust**
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+CyperPunk DE is a unique micro desktop environment inspired by Cyberpunk 2077. This project is written in Rust and offers a powerful and sleek interface for netrunners. Originally part of the Witch_Craft netrunner firmware, also known as the Universal Hacking Tool and Automation Engine, CyperPunk DE integrates seamlessly with Witch_Craft through both terminal and pre-installed applications.
 
-## Notes
+#### Wait, It's All HTML? Always Has Been!
 
-### App:
+Many desktop environments, including GNOME, use a combination of JavaScript and HTML/XML or similar markup languages. The exception lies in GUIs that utilize OpenGL or other 3D engines. CyperPunk DE follows a similar approach, with its apps written in HTML, CSS, and small amounts of JavaScript, incorporating libraries such as QuillJS and jQuery.
 
-prioridade:
+#### Then, It Must Be Slow? No, It's Not!
 
-    Browser (iframe for now)
-    Terminal com witch_craft
+CyperPunk DE is built using Tauri, with its core in Rust and a CLI leveraging Node.js. This combination ensures a lightweight and fast environment.
 
+#### Does It Use Electron? No.
 
-Secundarios:
+#### Are Tauri and Electron the Same Thing? No, But Actually, Yes.
 
-    Editor de texto
-    Painel de configurações (xorg/wayland)
-    Tela de loggin (user e guess)
+While Tauri and Electron are similar, CyperPunk DE uses Tauri to maintain a compact size of around 25MB, addressing concerns about LE'bloat.
 
-Menos importantes:
+# Galery
 
-    Games (OpenGL)
-    Caculadora
-    Simple office
-    PDF viewer
+!["CyberDE"](./docs/1.png)
+!["CyberDE"](./docs/2.png)
+!["CyberDE"](./docs/3.png)
+!["CyberDE"](./docs/4.png)

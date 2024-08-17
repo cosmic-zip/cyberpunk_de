@@ -1,7 +1,7 @@
 [package]
 name = "cyberpunkde"
 version = "0.1.0"
-description = "A Linux Desktop Environment inparied by Cyberpunk 2077"
+description = "A Linux Desktop Environment inspired by Cyberpunk 2077"
 authors = ["cosmic-zip"]
 edition = "2021"
 
