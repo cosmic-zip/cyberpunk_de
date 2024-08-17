@@ -1,3 +1,6 @@
+<script src="../scripts/jquery.terminal-2.42.2.min.js"></script>
+<link href="../styles/jquery.terminal-2.42.2.min.css" rel="stylesheet" />
+
 <script>
     $(document).ready(function () {
         $("#@@APP_NAME-close").click(function () {
@@ -5,6 +8,7 @@
         });
     });
 </script>
+
 <section id="@@APP_NAME" class="app @@APP_NAME">
     <div class="app-bar">
         <div class="app-knot">
@@ -15,7 +19,8 @@
     </div>
     <div class="boxed-window app-scroll">
         <div>
-            <h1><b>[lucy]@[netdriver MK5]:: |</b></h1>
+            <div id="term_demo" class="terminal"></div>
         </div>
     </div>
 </section>
+<link href="../styles/app.terminal.css" rel="stylesheet" />

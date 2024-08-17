@@ -58,3 +58,27 @@ $(document).ready(function () {
     sys_switch_desktop(number);
   });
 });
+
+var __EVAL = (s) => eval(`void (__EVAL = ${__EVAL}); ${s}`);
+jQuery(function ($, undefined) {
+  $("#term_demo").terminal(
+    function (command) {
+      if (command !== "") {
+        try {
+          var result = __EVAL(command);
+          if (result !== undefined) {
+            this.echo(new String(result));
+          }
+        } catch (e) {
+          this.error(new String(e));
+        }
+      }
+    },
+    {
+      greetings: "",
+      name: "witch",
+      height: 800,
+      prompt: "Witch :: Witch_Craft $ ",
+    },
+  );
+});
