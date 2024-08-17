@@ -51,7 +51,17 @@
     <button id="Terminal-btn" class="btn-some morp">Terminal</button>
     
 
-    <button class="btn-some morp">Editor</button>
+
+    <script>
+        $(document).ready(function () {
+        $("#Editor-btn").click(function () {
+            $("#Editor").toggle();
+        });
+        });
+    </script>
+    <button id="Editor-btn" class="btn-some morp">Editor</button>
+    
+
     <button class="btn-some morp">Office</button>
     <button class="btn-some morp">!NetMaidCafe</button>
     <button class="btn-some morp">Netwatch</button>
@@ -131,6 +141,45 @@
         </div>
     </div>
     <div class="boxed-window app-scroll">terminal</div>
+</section>
+
+
+<script>
+    $(document).ready(function () {
+        $("#Editor-close").click(function () {
+            $("#Editor").toggle();
+        });
+    });
+</script>
+<section id="Editor" class="app Editor">
+    <div class="app-bar">
+        <div class="app-knot">
+            <span class="app-window-name">Editor</span>
+            <button id="Editor-close" class="app-btn">X</button>
+            <button id="Editor-minimize" class="app-btn">-</button>
+        </div>
+    </div>
+    <div class="boxed-window app-scroll editor-textarea">
+        <link href="../styles/quill.snow.css" rel="stylesheet" />
+        <link href="../styles/app.editor.css" rel="stylesheet" />
+        <script src="../scripts/highlight.min.js"></script>
+        <script src="../scripts/quill.js"></script>
+
+        <div id="editor"></div>
+        <script>
+            const quill = new Quill("#editor", {
+                modules: {
+                    syntax: true, // Include syntax module
+                    toolbar: [
+                        [{ header: [1, 2, false] }],
+                        ["bold", "italic", "underline"],
+                        ["image", "code-block"],
+                    ], // Include button in toolbar
+                },
+                theme: "snow",
+            });
+        </script>
+    </div>
 </section>
 
 </div>

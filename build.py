@@ -13,6 +13,7 @@ def build_index():
     apps = [
         "apps/browser",
         "apps/terminal",
+        "apps/editor",
     ]
 
     ui = read_file("src/system/ui.html")

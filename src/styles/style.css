@@ -99,6 +99,7 @@ header {
     height: 85vh;
     padding: 5px;
     background-color: #000000b8;
+    backdrop-filter: blur(15px);
 }
 
 main {

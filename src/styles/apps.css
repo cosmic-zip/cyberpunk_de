@@ -48,7 +48,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px 0px 10px;
-    z-index: 0;
+    z-index: 1;
     margin-bottom: -50px;
     position: relative;
 }
@@ -56,6 +56,7 @@
 .browser {
     display: flex;
     justify-content: center;
+    color: aliceblue;
 }
 
 .browser-iframe {
