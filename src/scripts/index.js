@@ -5,6 +5,12 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  $("#show-desktop").click(function () {
+    $(".app").hide();
+  });
+});
+
+$(document).ready(function () {
   function updateClock() {
     var now = new Date();
     var hours = now.getHours();
