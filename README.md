@@ -2,11 +2,62 @@
 
 ### CyperPunk DE: The Ultimate Netrunner Choice!
 
+#### Cyberpunk DE is compatible with almost all major OS's
+
+* *Linux
+* *BSD
+* Mac OS
+* Windows
+* Android/IOS comming soon
+
 #### A Complete Micro Desktop Environment Inspired by Cyberpunk 2077, Written in **Rust**
 
 CyperPunk DE is a unique micro desktop environment inspired by Cyberpunk 2077. This project is written in Rust and offers a
 powerful and sleek interface for netrunners. Originally part of the Witch_Craft netrunner firmware the Universal Hacking Tool and Automation Engine,
 CyperPunk DE integrates seamlessly with Witch_Craft through both terminal and pre-installed app.
+
+### Install
+
+#### Pre-compiled
+
+Use the self installer:
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/cosmic-zip/cyberpunk/master/install.sh)"
+```
+
+Download and extract the package from the latest release:
+```bash
+chmod +x install.sh
+sudo ./install.sh
+```
+
+Build from source:
+```bash
+git clone https://github.com/cosmic-zip/cyberpunk_de
+cd cyberpunk_de
+chmod +x build_install.sh
+sudo ./build_install.sh
+```
+
+#### Development and Customization
+
+To add new apps or updates, you will need the following:
+1. Development web server
+2. Cargo and Tauri
+3. The `build.py` and `server.sh` scripts
+
+The `build.py` script builds every app into a single page, like an SPA (Single Page Application).
+
+Start the server:
+```bash
+cd /src/server.sh
+```
+
+If you modify the HTML, you need to build again (Automating this step is on the to-do list):
+```bash
+cd ./build.py
+```
+
 
 #### Wait, It's All HTML? Always Has Been!
 
