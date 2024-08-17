@@ -76,7 +76,7 @@ lightweight and fast environment.
 
 While Tauri and Electron are similar, CyperPunk DE uses Tauri to maintain a compact size of around 25MB, addressing concerns about LE'bloat.
 
-# Galery
+# Gallery
 
 !["CyberDE"](./docs/1.png)
 !["CyberDE"](./docs/2.png)
