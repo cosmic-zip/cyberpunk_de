@@ -1,5 +1,5 @@
 .terminal {
-    background-color: #0000 !important;
+    background: #0000 !important;
     height: 100% !important;
     font-size: 15px !important;
     color: var(--main-text);

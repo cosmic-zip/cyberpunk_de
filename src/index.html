@@ -40,20 +40,25 @@
         <section class="main-ctn">
             <main>
                 <div id="sidebar" class="sidebar"><div class="cyber">
-    <img src="../assets/eye.gif" />
+    <div>
+        <img src="../assets/eye.gif" />
+    </div>
 </div>
 <div class="clock-widget">
     <h1 id="clock"></h1>
 </div>
-<div class="btn-ctn">
-    <script>
+<div class="btn-ctn"><script>
     $(document).ready(function () {
         $("#browser-btn").click(function () {
             $("#app-browser").toggle();
         });
     });
 </script>
-<button id="browser-btn" class="btn-some morp">browser</button>
+<!-- <button class="btn-some morp">browser</button> -->
+<button id="browser-btn" class="start-icons" id="browser">
+    <img class="start-icons-ico" src="../icons/browser.png" />
+    <h1>browser</h1>
+</button>
 
 <script>
     $(document).ready(function () {
@@ -62,7 +67,11 @@
         });
     });
 </script>
-<button id="terminal-btn" class="btn-some morp">terminal</button>
+<!-- <button class="btn-some morp">terminal</button> -->
+<button id="terminal-btn" class="start-icons" id="browser">
+    <img class="start-icons-ico" src="../icons/browser.png" />
+    <h1>terminal</h1>
+</button>
 
 <script>
     $(document).ready(function () {
@@ -71,14 +80,12 @@
         });
     });
 </script>
-<button id="editor-btn" class="btn-some morp">editor</button>
+<!-- <button class="btn-some morp">editor</button> -->
+<button id="editor-btn" class="start-icons" id="browser">
+    <img class="start-icons-ico" src="../icons/browser.png" />
+    <h1>editor</h1>
+</button>
 
-
-    <button class="btn-some morp">Office</button>
-    <button class="btn-some morp">!NetMaidCafe</button>
-    <button class="btn-some morp">Netwatch</button>
-    <button class="btn-some morp">Setting</button>
-    <button class="btn-some morp">Games</button>
 </div>
 </div>
                 <div class="content">
@@ -3152,8 +3159,8 @@ $(document).ready(function () {
 }
 
 .ql-toolbar.ql-snow {
-    background-color: var(--main-color) !important;
-    border: solid 2px var(--main-color);
+    background-color: var(--ancient-color) !important;
+    border: solid 2px var(--ancient-color);
     margin: -5px;
 }
 
@@ -3168,7 +3175,7 @@ $(document).ready(function () {
     color: var(--main-bg);
     padding: 5px 12px;
     white-space: nowrap;
-    background: var(--main-color);
+    background: var(--ancient-color);
 }
 
 .ql-snow a {
@@ -3176,7 +3183,7 @@ $(document).ready(function () {
 }
 
 .ql-code-block-container .ql-ui {
-    background-color: var(--main-color);
+    background-color: var(--ancient-color);
     border: none;
     font-weight: bolder;
     width: 120px;

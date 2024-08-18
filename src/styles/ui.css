@@ -3,6 +3,7 @@
     --main-bg: black;
     --main-text-light: aliceblue;
     --main-text-dark: black;
+    --main-hover: blue;
 }
 
 body {
@@ -56,7 +57,9 @@ header {
 }
 
 .main_apps_menu:hover {
-    background: red;
+    background: var(--ancient-color);
+    border: solid 2px var(--main-bg);
+    color: var(--main-text-dark);
 }
 
 .main-ctn {
@@ -81,21 +84,50 @@ main {
 }
 
 .sidebar {
-    width: 360px;
+    min-width: 380px;
     backdrop-filter: blur(20px);
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
+.start-icons {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+    background: none;
+    border: solid 1px #0000;
+    color: var(--main-text-light);
+    font-weight: normal;
+    font-size: 10px !important;
+    overflow: hidden;
+}
+
+.start-icons-ico {
+    width: 50px;
+    height: 50px;
+}
+
+.start-icons:hover {
+    border-radius: 5px;
+    background: linear-gradient(
+        230deg,
+        rgba(0, 0, 0, 0.6544818611038166) 0%,
+        rgba(157, 157, 157, 0.27) 50%,
+        rgba(18, 11, 11, 0.5060224773503151) 100%
+    );
+    border: solid 1px #000;
+}
+
 .clock-widget {
     text-align: center;
-    margin: 20px;
     font-family: "Courier New", Courier, monospace;
 }
 
 .btn-ctn {
-    margin-top: 40px;
-    margin-left: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 120px 120px 120px;
 }
 
 .btn-some {
@@ -122,10 +154,12 @@ main {
 .cyber {
     max-width: 25%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .cyber img {
-    max-width: 100%;
+    max-width: 60px;
     margin-top: 50px;
     border-radius: 100%;
 }

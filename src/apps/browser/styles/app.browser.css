@@ -15,21 +15,21 @@
     border: none;
     height: 30px;
     width: 60px;
-    background-color: var(--main-bg);
+    background: var(--main-bg);
     color: aliceblue;
     font-weight: bold;
     border-left: solid 2px var(--main-color);
 }
 
 .search-btn:hover {
-    background-color: red;
+    background: var(--main-hover);
 }
 
 .search-input {
     height: 30px;
     width: 30vw;
     border: none;
-    background: black;
+    background: var(--main-bg);
     color: aliceblue;
     padding: 0px 10px 0px 10px;
 }

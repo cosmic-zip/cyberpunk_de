@@ -1,4 +1,4 @@
-.sidebar,
+/* .sidebar, */
 .app {
     display: none;
 }
@@ -35,14 +35,14 @@
 .app-btn {
     height: 30px;
     width: 30px;
-    background-color: var(--main-bg);
+    background: var(--main-bg);
     color: aliceblue;
     font-weight: bold;
     border: solid 2px var(--ancient-color);
 }
 
 .app-btn:hover {
-    background-color: red;
+    background: var(--main-hover);
 }
 
 .app-btn .app-active {

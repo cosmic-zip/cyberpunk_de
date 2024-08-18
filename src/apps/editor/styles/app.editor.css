@@ -3,8 +3,8 @@
 }
 
 .ql-toolbar.ql-snow {
-    background-color: var(--main-color) !important;
-    border: solid 2px var(--main-color);
+    background: var(--ancient-color) !important;
+    border: solid 2px var(--ancient-color);
     margin: -5px;
 }
 
@@ -14,12 +14,11 @@
 }
 
 .ql-tooltip {
-    background-color: #fff;
     border: none;
     color: var(--main-bg);
     padding: 5px 12px;
     white-space: nowrap;
-    background: var(--main-color);
+    background: var(--ancient-color);
 }
 
 .ql-snow a {
@@ -27,7 +26,7 @@
 }
 
 .ql-code-block-container .ql-ui {
-    background-color: var(--main-color);
+    background: var(--ancient-color);
     border: none;
     font-weight: bolder;
     width: 120px;
