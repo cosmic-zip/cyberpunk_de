@@ -18,6 +18,7 @@
     justify-content: end;
     background: var(--main-color);
     align-items: center;
+    text-transform: uppercase;
 }
 
 .app-window-name {

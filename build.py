@@ -1,8 +1,47 @@
 #!/usr/bin/python3
+import os
 
-def read_file(path: str):
+def read_file(path: str) -> str:
     with open(path, 'r') as file:
         return file.read()
+
+
+def create_app(app_name: str):
+    base_path = f"src/apps/{app_name}"
+    files = [
+        f"{base_path}/{app_name}.html",
+        f"{base_path}/scripts/app.{app_name}.js",
+        f"{base_path}/styles/app.{app_name}.css",
+    ]
+
+    for file_path in files:
+        directory = os.path.dirname(file_path)
+        os.makedirs(directory, exist_ok=True)
+        with open(file_path, 'w') as file:
+            file.write("")
+
+    print("Done!")
+
+def read_files_paths(path: str) -> list:
+    try:
+        files = os.listdir(path)
+        return files
+    except FileNotFoundError as err:
+        print(f"error {err}")
+        return []
+
+def mount_scripts(scripts: list) -> str:
+    html_script = ""
+    for sc in scripts:
+        html_script = f'<script src="{sc}"></script>'
+    return html_script
+
+def mount_styles(scripts: list) -> str:
+    html_css = ""
+    for st in scripts:
+        html_css = f'<link href="{st}" rel="stylesheet" />'
+    return html_css
+
 
 def build_index():
     system = [
@@ -54,4 +93,10 @@ def build_index():
         file.write(index)
         file.close()
 
-build_index()
+def build():
+    pass
+
+create_app("desktop")
+create_app("browser")
+create_app("terminal")
+create_app("editor")
