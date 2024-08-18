@@ -86,6 +86,19 @@
     <h1 class="start-app-name">editor</h1>
 </button>
 
+<script>
+    $(document).ready(function () {
+        $("#settings-btn").click(function () {
+            $("#app-settings").toggle();
+        });
+    });
+</script>
+<!-- <button class="btn-some morp">settings</button> -->
+<button id="settings-btn" class="start-icons" id="browser">
+    <img class="start-icons-ico" src="../icons/settings.png" />
+    <h1 class="start-app-name">settings</h1>
+</button>
+
 </div>
 </div>
                 <div class="content">
@@ -3234,6 +3247,34 @@ select.ql-ui {
     </script>
 </div>
 </div>
+</section>
+
+
+<script>
+
+</script>
+<script>
+$(document).ready(function () {
+  $("#close-settings").click(function () {
+    $("#app-settings").toggle();
+  });
+});
+
+</script>
+ <style>
+
+</style>
+
+
+<section id="app-settings" class="app app-settings">
+    <div class="app-bar">
+        <div class="app-knot">
+            <span class="app-window-name">settings</span>
+            <button id="close-settings" class="app-btn">X</button>
+            <button id="minimize-settings" class="app-btn">-</button>
+        </div>
+    </div>
+    <div class="boxed-window app-scroll"></div>
 </section>
 
 </div>

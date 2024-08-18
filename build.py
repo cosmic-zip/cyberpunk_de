@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import os
+import os, sys
 
 
 def read_file(path: str) -> str:
@@ -129,4 +129,32 @@ def build_cyberpunk_desktop() -> str:
         return "error"
 
 
-print(build_cyberpunk_desktop())
+
+
+def cli():
+    options = sys.argv
+    help = '''
+    Valid options:
+        help
+        build
+        new app-name
+    '''
+
+
+    if (len(options)) < 2:
+        print(help)
+        return
+
+    match options[1]:
+        case 'build':
+            print(build_cyberpunk_desktop())
+            return
+        case 'new':
+            if(len(options)) < 3:
+                print("Missing app name")
+            create_app(options[2])
+            print(help)
+        case 'help':
+            print(help)
+
+cli()
