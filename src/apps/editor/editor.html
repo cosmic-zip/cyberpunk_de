@@ -1,0 +1,16 @@
+<div class="editor-textarea">
+    <div id="editor"></div>
+    <script>
+        const quill = new Quill("#editor", {
+            modules: {
+                syntax: true, // Include syntax module
+                toolbar: [
+                    [{ header: [1, 2, false] }],
+                    ["bold", "italic", "underline"],
+                    ["image", "code-block"],
+                ], // Include button in toolbar
+            },
+            theme: "snow",
+        });
+    </script>
+</div>

@@ -1,0 +1,44 @@
+.browser {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.browser-iframe {
+    border: none;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.search-btn {
+    border: none;
+    height: 30px;
+    width: 60px;
+    background-color: var(--main-bg);
+    color: aliceblue;
+    font-weight: bold;
+    border-left: solid 2px var(--main-color);
+}
+
+.search-btn:hover {
+    background-color: red;
+}
+
+.search-input {
+    height: 30px;
+    width: 30vw;
+    border: none;
+    background: black;
+    color: aliceblue;
+    padding: 0px 10px 0px 10px;
+}
+
+.search-bar {
+    align-items: center;
+}
+
+.search-bar button {
+    margin-right: 10px;
+    height: 30px;
+}
