@@ -26,7 +26,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 15px 0px 15px;
-    text-transform: uppercase;
 }
 
 .taskbar-btn {
@@ -57,38 +56,6 @@ header {
 
 .main_apps_menu:hover {
     background-color: red;
-}
-
-.search-btn {
-    border: none;
-    height: 30px;
-    width: 60px;
-    background-color: var(--main-bg);
-    color: aliceblue;
-    font-weight: bold;
-    border-left: solid 2px var(--main-color);
-}
-
-.search-btn:hover {
-    background-color: red;
-}
-
-.search-input {
-    height: 30px;
-    width: 30vw;
-    border: none;
-    background: black;
-    color: aliceblue;
-    padding: 0px 10px 0px 10px;
-}
-
-.search-bar {
-    align-items: center;
-}
-
-.search-bar button {
-    margin-right: 10px;
-    height: 30px;
 }
 
 .main-ctn {
@@ -142,6 +109,7 @@ main {
     border: none;
     background-image: url("../assets/1.png");
     background-color: var(--main-color);
+    text-transform: capitalize;
 }
 
 .btn-some:hover {
@@ -166,9 +134,4 @@ main {
     width: inherit;
     display: flex;
     justify-content: space-evenly;
-}
-
-.sidebar,
-.app {
-    display: none;
 }
