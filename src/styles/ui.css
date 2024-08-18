@@ -1,7 +1,8 @@
 :root {
-    --main-color: #ffe500;
+    --ancient-color: #ffe500;
     --main-bg: black;
-    --main-text: aliceblue;
+    --main-text-light: aliceblue;
+    --main-text-dark: black;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: var(--main-bg);
-    color: var(--main-text);
+    color: var(--main-text-light);
     font-family: monospace;
     background-image: url("../wallpapers/wp1.jpg");
     background-repeat: repeat;
@@ -21,7 +22,7 @@ header {
 }
 
 .start-menu {
-    background: var(--main-color);
+    background: var(--ancient-color);
     height: 20px;
     justify-content: space-between;
     align-items: center;
@@ -32,25 +33,25 @@ header {
     height: 35px;
     width: 35px;
     background-color: var(--main-bg);
-    color: aliceblue;
+    color: var(--main-text-light);
     font-weight: bold;
-    border: solid 2px var(--main-color);
+    border: solid 2px var(--ancient-color);
 }
 
 .taskbar-btn:hover {
-    background-color: var(--main-color);
-    color: var(--main-bg);
+    background-color: var(--ancient-color);
+    color: var(--main-text-dark);
     border: solid 2px var(--main-bg);
 }
 
 .main_apps_menu {
     width: 54px;
-    height: 40px;
+    height: 35px;
     padding: 5px;
     text-align: center;
-    color: aliceblue;
+    color: var(--main-text-light);
     background-color: var(--main-bg);
-    border: solid 2px var(--main-color);
+    border: solid 2px var(--ancient-color);
     font-weight: bolder;
 }
 
@@ -63,7 +64,7 @@ header {
 }
 
 .boxed-window {
-    border: solid 5px var(--main-color);
+    border: solid 5px var(--ancient-color);
     height: 85vh;
     padding: 5px;
     background-color: #000000b8;
@@ -75,14 +76,16 @@ main {
     height: 94vh;
     display: flex;
     margin: 15px;
-    border: solid 2px var(--main-color);
-    box-shadow: 10px 10px var(--main-color);
+    border: solid 2px var(--ancient-color);
+    box-shadow: 10px 10px var(--ancient-color);
 }
 
 .sidebar {
     width: 360px;
-    border-right: solid 2px var(--main-color);
+    border-right: solid 2px var(--ancient-color);
     backdrop-filter: blur(10px);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .clock-widget {
@@ -105,10 +108,10 @@ main {
     font-weight: bolder;
     padding-left: 30px;
     margin-top: 10px;
-    color: black;
+    color: var(--main-text-dark);
     border: none;
     background-image: url("../assets/1.png");
-    background-color: var(--main-color);
+    background-color: var(--ancient-color);
     text-transform: capitalize;
 }
 
@@ -134,4 +137,35 @@ main {
     width: inherit;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-height: 600px) {
+    main {
+        height: 90vh;
+        font-size: 10px !important;
+        box-shadow: 4px 4px var(--ancient-color);
+        margin: 10px;
+    }
+
+    .main_apps_menu {
+        height: 30px;
+    }
+
+    .btn-some {
+        font-size: 10px;
+        max-width: 200px;
+        height: 15px;
+    }
+
+    .boxed-window {
+        height: 78vh;
+    }
+
+    .search-btn {
+        width: unset !important;
+    }
+
+    .search-input {
+        width: unset !important;
+    }
 }

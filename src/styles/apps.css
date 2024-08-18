@@ -21,13 +21,13 @@
     width: 200px;
     display: flex;
     justify-content: end;
-    background: var(--main-color);
+    background: var(--ancient-color);
     align-items: center;
     text-transform: capitalize;
 }
 
 .app-window-name {
-    color: var(--main-bg);
+    color: var(--main-text-dark);
     font-weight: bolder;
     margin-right: 10px;
 }
@@ -38,7 +38,7 @@
     background-color: var(--main-bg);
     color: aliceblue;
     font-weight: bold;
-    border: solid 2px var(--main-color);
+    border: solid 2px var(--ancient-color);
 }
 
 .app-btn:hover {
@@ -49,7 +49,7 @@
 }
 
 .app-toolbar {
-    background: var(--main-color);
+    background: var(--ancient-color);
     height: 50px;
     justify-content: space-between;
     align-items: center;
