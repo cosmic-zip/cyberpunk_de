@@ -40,6 +40,7 @@ $(document).ready(function () {
       "url(wallpapers/wp3.jpg)",
       "url(wallpapers/wp4.jpg)",
       "url(wallpapers/wp5.jpg)",
+      "url(wallpapers/wp6.jpg)",
     ];
 
     if (number >= 1 && number <= images.length) {

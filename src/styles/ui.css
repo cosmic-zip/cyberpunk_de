@@ -9,10 +9,10 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--main-bg);
+    background: var(--main-bg);
     color: var(--main-text-light);
     font-family: monospace;
-    background-image: url("../wallpapers/wp1.jpg");
+    background-image: url("../wallpapers/wp6.jpg");
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -32,14 +32,14 @@ header {
 .taskbar-btn {
     height: 35px;
     width: 35px;
-    background-color: var(--main-bg);
+    background: var(--main-bg);
     color: var(--main-text-light);
     font-weight: bold;
     border: solid 2px var(--ancient-color);
 }
 
 .taskbar-btn:hover {
-    background-color: var(--ancient-color);
+    background: var(--ancient-color);
     color: var(--main-text-dark);
     border: solid 2px var(--main-bg);
 }
@@ -50,13 +50,13 @@ header {
     padding: 5px;
     text-align: center;
     color: var(--main-text-light);
-    background-color: var(--main-bg);
+    background: var(--main-bg);
     border: solid 2px var(--ancient-color);
     font-weight: bolder;
 }
 
 .main_apps_menu:hover {
-    background-color: red;
+    background: red;
 }
 
 .main-ctn {
@@ -67,7 +67,7 @@ header {
     border: solid 5px var(--ancient-color);
     height: 85vh;
     padding: 5px;
-    background-color: #000000b8;
+    background: #000000b8;
     backdrop-filter: blur(15px);
 }
 
@@ -82,8 +82,7 @@ main {
 
 .sidebar {
     width: 360px;
-    border-right: solid 2px var(--ancient-color);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -111,7 +110,7 @@ main {
     color: var(--main-text-dark);
     border: none;
     background-image: url("../assets/1.png");
-    background-color: var(--ancient-color);
+    background: var(--ancient-color);
     text-transform: capitalize;
 }
 
@@ -121,7 +120,7 @@ main {
 }
 
 .cyber {
-    max-width: 90%;
+    max-width: 25%;
     margin: 0 auto;
 }
 
