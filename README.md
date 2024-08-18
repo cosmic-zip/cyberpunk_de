@@ -82,3 +82,39 @@ While Tauri and Electron are similar, CyperPunk DE uses Tauri to maintain a comp
 !["CyberDE"](./docs/2.png)
 !["CyberDE"](./docs/3.png)
 !["CyberDE"](./docs/4.png)
+
+## Icons from:
+
+
+```txt
+||                                                 ||
+ ===================================================
+        ____   ____                ___
+       /   /  /   /               /  /
+      /   /__/   /               /  /
+     /          / ___  ___  ____/  / ______  ______
+    /   ___    / /  / /  / / __   / /  ___/ / __  /
+   /   /  /   / /  /_/  / / /_/  / /  /    / /_/ /
+  /___/  /___/ /____   / /______/ /__/    /_____/
+  _________________/  / ____  ___  ____        _
+ /                   / /   / / _/ /   /   /\/\|_)
+/___________________/ / __/ /_/  /___/
+                     /_/
+
+ ===================================================
+||                                                 ||
+||                 DOCK ICONS BY                   ||
+||                  BEN FLEMING                    ||
+||                                                 ||
+||                     VISIT                       ||
+||           mediadesign.deviantart.com            ||
+||                   FOR  MORE                     ||
+||                                                 ||
+ ===================================================
+
+          [[[[[[ www.opclans.com ]]]]]]]
+
+These icons are now available for commercial use!
+You don't have to ask permission to use them, however it would be nice
+if you could inform me that you're using them, and what you're using them for.
+```

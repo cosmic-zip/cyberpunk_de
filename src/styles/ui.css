@@ -88,6 +88,11 @@ main {
     backdrop-filter: blur(20px);
     overflow-y: scroll;
     overflow-x: hidden;
+    border-right: solid 5px #0000003d;
+}
+
+.start-app-name {
+    text-transform: capitalize;
 }
 
 .start-icons {
@@ -101,6 +106,7 @@ main {
     font-weight: normal;
     font-size: 10px !important;
     overflow: hidden;
+    padding: 10px;
 }
 
 .start-icons-ico {

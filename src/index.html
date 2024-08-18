@@ -57,7 +57,7 @@
 <!-- <button class="btn-some morp">browser</button> -->
 <button id="browser-btn" class="start-icons" id="browser">
     <img class="start-icons-ico" src="../icons/browser.png" />
-    <h1>browser</h1>
+    <h1 class="start-app-name">browser</h1>
 </button>
 
 <script>
@@ -69,8 +69,8 @@
 </script>
 <!-- <button class="btn-some morp">terminal</button> -->
 <button id="terminal-btn" class="start-icons" id="browser">
-    <img class="start-icons-ico" src="../icons/browser.png" />
-    <h1>terminal</h1>
+    <img class="start-icons-ico" src="../icons/terminal.png" />
+    <h1 class="start-app-name">terminal</h1>
 </button>
 
 <script>
@@ -82,8 +82,8 @@
 </script>
 <!-- <button class="btn-some morp">editor</button> -->
 <button id="editor-btn" class="start-icons" id="browser">
-    <img class="start-icons-ico" src="../icons/browser.png" />
-    <h1>editor</h1>
+    <img class="start-icons-ico" src="../icons/editor.png" />
+    <h1 class="start-app-name">editor</h1>
 </button>
 
 </div>
@@ -128,21 +128,21 @@ $(document).ready(function () {
     border: none;
     height: 30px;
     width: 60px;
-    background-color: var(--main-bg);
+    background: var(--main-bg);
     color: aliceblue;
     font-weight: bold;
     border-left: solid 2px var(--main-color);
 }
 
 .search-btn:hover {
-    background-color: red;
+    background: var(--main-hover);
 }
 
 .search-input {
     height: 30px;
     width: 30vw;
     border: none;
-    background: black;
+    background: var(--main-bg);
     color: aliceblue;
     padding: 0px 10px 0px 10px;
 }
@@ -3112,7 +3112,7 @@ terminal .terminal-output > div {
 </style>
 <style>
 .terminal {
-    background-color: #0000 !important;
+    background: #0000 !important;
     height: 100% !important;
     font-size: 15px !important;
     color: var(--main-text);
@@ -3159,7 +3159,7 @@ $(document).ready(function () {
 }
 
 .ql-toolbar.ql-snow {
-    background-color: var(--ancient-color) !important;
+    background: var(--ancient-color) !important;
     border: solid 2px var(--ancient-color);
     margin: -5px;
 }
@@ -3170,7 +3170,6 @@ $(document).ready(function () {
 }
 
 .ql-tooltip {
-    background-color: #fff;
     border: none;
     color: var(--main-bg);
     padding: 5px 12px;
@@ -3183,7 +3182,7 @@ $(document).ready(function () {
 }
 
 .ql-code-block-container .ql-ui {
-    background-color: var(--ancient-color);
+    background: var(--ancient-color);
     border: none;
     font-weight: bolder;
     width: 120px;
