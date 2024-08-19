@@ -17,6 +17,9 @@ This project needs to archive some goals first:
 All these topics are now a role-complex application in themselves, then what? give up?
 No, just planning
 
+Also, the developer experiencie are garbage, i need to run ./build build every time i save
+to generate a neww version of the SPA, LMAO.
+
 #### Cyberpunk DE is compatible with almost all major OS's
 
 * *Linux
