@@ -1,0 +1,9 @@
+.compass-ctn {
+    filter: invert();
+}
+.compass-iframe {
+    border: solid 2px var(--main-bg);
+    width: 100%;
+    height: 85vh;
+    filter: grayscale(100%);
+}
