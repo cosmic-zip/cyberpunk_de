@@ -13,7 +13,7 @@ body {
     background: var(--main-bg);
     color: var(--main-text-light);
     font-family: monospace;
-    background-image: url("../wallpapers/wp6.jpg");
+    background-image: url("../wallpapers/wp1.jpg");
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -71,7 +71,6 @@ header {
     height: 85vh;
     padding: 5px;
     background: #000000b8;
-    backdrop-filter: blur(15px);
 }
 
 main {
@@ -85,7 +84,6 @@ main {
 
 .sidebar {
     min-width: 380px;
-    backdrop-filter: blur(20px);
     background: #000000b8;
     overflow-y: scroll;
     overflow-x: hidden;
