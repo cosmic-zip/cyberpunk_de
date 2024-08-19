@@ -1,0 +1,24 @@
+.settings-sidebar {
+    width: 25vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-right: 10px;
+}
+
+.settings-option {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: solid 2px var(--main-bg);
+    height: 35px;
+    background: var(--ancient-color);
+    text-transform: capitalize;
+}
+
+.settings-option:hover {
+    background: var(--main-bg);
+    border: solid 2px var(--ancient-color);
+    color: var(--main-text-light);
+}

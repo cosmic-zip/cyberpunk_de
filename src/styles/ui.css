@@ -86,6 +86,7 @@ main {
 .sidebar {
     min-width: 380px;
     backdrop-filter: blur(20px);
+    background: #000000b8;
     overflow-y: scroll;
     overflow-x: hidden;
     border-right: solid 5px #0000003d;

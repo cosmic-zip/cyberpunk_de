@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/ui.css" />
         <link rel="stylesheet" href="styles/apps.css" />
+        <link rel="stylesheet" href="styles/active.css" />
         <script src="scripts/jquery.js"></script>
         <script src="scripts/ui.js"></script>
         <title>_</title>
@@ -3262,6 +3263,30 @@ $(document).ready(function () {
 
 </script>
  <style>
+.settings-sidebar {
+    width: 25vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-right: 10px;
+}
+
+.settings-option {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: solid 2px var(--main-bg);
+    height: 35px;
+    background: var(--ancient-color);
+    text-transform: capitalize;
+}
+
+.settings-option:hover {
+    background: var(--main-bg);
+    border: solid 2px var(--ancient-color);
+    color: var(--main-text-light);
+}
 
 </style>
 
@@ -3274,7 +3299,26 @@ $(document).ready(function () {
             <button id="minimize-settings" class="app-btn">-</button>
         </div>
     </div>
-    <div class="boxed-window app-scroll"></div>
+    <div class="boxed-window app-scroll"><div class="main-ctn">
+    <div class="settings-sidebar">
+        <button id="visual" class="settings-option">visual</button>
+        <button id="accounts" class="settings-option">accounts</button>
+        <button id="network" class="settings-option">network</button>
+        <button id="applications" class="settings-option">applications</button>
+        <button id="scripts" class="settings-option">scripts</button>
+        <button id="security" class="settings-option">security</button>
+    </div>
+
+    <div class="settings-container">
+        <div class="settings-ctn-item">
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem
+        </div>
+    </div>
+</div>
+</div>
 </section>
 
 </div>
