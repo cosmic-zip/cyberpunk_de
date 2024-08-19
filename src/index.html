@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="../icons/flash.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/ui.css" />
         <link rel="stylesheet" href="styles/apps.css" />
         <link rel="stylesheet" href="styles/active.css" />
         <script src="scripts/jquery.js"></script>
         <script src="scripts/ui.js"></script>
+        <link />
         <title>_</title>
     </head>
     <body id="changeBackground">
@@ -60,19 +61,6 @@
 <button id="compass-btn" class="start-icons" id="browser">
     <img class="start-icons-ico" src="../icons/compass.png" />
     <h1 class="start-app-name">compass</h1>
-</button>
-
-<script>
-    $(document).ready(function () {
-        $("#browser-btn").click(function () {
-            $("#app-browser").toggle();
-        });
-    });
-</script>
-<!-- <button class="btn-some morp">browser</button> -->
-<button id="browser-btn" class="start-icons" id="browser">
-    <img class="start-icons-ico" src="../icons/browser.png" />
-    <h1 class="start-app-name">browser</h1>
 </button>
 
 <script>
@@ -170,119 +158,6 @@ $(document).ready(function () {
         class="compass-iframe"
     ></iframe>
 </div>
-</div>
-</section>
-
-
-<script>
-$(document).ready(function () {
-  var myString = "This is the content to be injected into the iframe.";
-  var iframe = $("#browserIframe"); // Replace 'myIframe' with your iframe's ID
-
-  // Access the iframe's document
-  var iframeDoc = iframe[0].contentWindow.document;
-
-  // Set the iframe's content to the string
-  iframeDoc.body.innerHTML = myString;
-});
-
-</script>
-<script>
-$(document).ready(function () {
-  $("#close-browser").click(function () {
-    $("#app-browser").toggle();
-  });
-});
-
-</script>
- <style>
-.browser {
-    display: flex;
-    justify-content: center;
-    color: aliceblue;
-}
-
-.browser-iframe {
-    border: none;
-    margin-top: 40px;
-    width: 100%;
-    height: 100%;
-}
-
-.search-btn {
-    border: none;
-    height: 30px;
-    width: 60px;
-    background: var(--main-bg);
-    color: aliceblue;
-    font-weight: bold;
-    border-left: solid 2px var(--main-color);
-}
-
-.search-btn:hover {
-    background: var(--main-hover);
-}
-
-.search-input {
-    height: 30px;
-    width: 30vw;
-    border: none;
-    background: var(--main-bg);
-    color: aliceblue;
-    padding: 0px 10px 0px 10px;
-}
-
-.search-bar {
-    align-items: center;
-}
-
-.search-bar button {
-    margin-right: 10px;
-    height: 30px;
-}
-
-.browser-toolbar {
-    background: var(--ancient-color);
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    z-index: 1;
-    position: fixed;
-}
-
-</style>
-
-
-<section id="app-browser" class="app app-browser">
-    <div class="app-bar">
-        <div class="app-knot">
-            <span class="app-window-name">browser</span>
-            <button id="close-browser" class="app-btn">X</button>
-            <button id="minimize-browser" class="app-btn">-</button>
-        </div>
-    </div>
-    <div class="app-toolbar"></div>
-    <div class="boxed-window app-scroll"><nav class="browser-toolbar main-ctn">
-    <div class="main-ctn">
-        <button class="search-btn">Back</button>
-        <button class="search-btn">Foward</button>
-    </div>
-    <div class="main-ctn search-bar">
-        <button id="browse" class="search-btn" type="submit">Net!</button>
-        <input
-            id="query"
-            type="text"
-            class="search-input"
-            placeholder="Search in the net now!"
-        />
-    </div>
-    <div class="main-ctn">
-        <button class="search-btn">Home</button>
-        <button class="search-btn">Setting</button>
-    </div>
-</nav>
-<iframe id="browserIframe" class="browser-iframe"></iframe>
 </div>
 </section>
 
