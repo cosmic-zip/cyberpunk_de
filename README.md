@@ -2,6 +2,22 @@
 
 ### CyperPunk DE: The Ultimate Netrunner Choice!
 
+Exponencial complexity of all apps and the build system.
+Every action is complex; the apps are simple because they
+need to be, for turn out this project is unusable for now and then.
+It somehow works will be a nightmare to maintain.
+
+This project needs to archive some goals first:
+
+1. A standard library to integrate RUST and JS with unit tests
+2. A standard UI and JS library, sharable between all apps
+3. Support for OpenGL 2.0
+4. Support for Multimedia
+5. An library for keyboard shortcuts
+
+All these topics are now a role-complex application in themselves, then what? give up?
+No, just planning
+
 #### Cyberpunk DE is compatible with almost all major OS's
 
 * *Linux
