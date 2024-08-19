@@ -164,10 +164,10 @@ $(document).ready(function () {
         </div>
     </div>
     <div class="boxed-window app-scroll"><div class="compass-ctn">
-    <!-- <iframe
+    <iframe
         src="https://www.openstreetmap.org/export/embed.html?bbox=-52.4761962890625%2C-18.250219977065594%2C-41.70959472656251%2C-13.443052132777558&amp;layer=mapnik"
         class="compass-iframe"
-    ></iframe> -->
+    ></iframe>
 </div>
 </div>
 </section>
@@ -3333,38 +3333,6 @@ $(document).ready(function () {
 
 </script>
  <style>
-.settings-sidebar {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    margin: 10px;
-    width: 200px;
-}
-
-.default-btn {
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
-    font-size: 15px;
-    font-weight: bold;
-    border: solid 2px var(--ancient-color);
-    height: 35px;
-    background: var(--ancient-color);
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
-
-.default-btn:hover {
-    background: var(--main-hover);
-    border: solid 2px var(--ancient-color);
-    color: var(--main-text-light);
-}
-
-.settings-container {
-    margin: 10px;
-    border: solid 2px var(--ancient-color);
-    border-radius: 10px;
-    padding: 20px;
-}
 
 </style>
 
@@ -3377,32 +3345,7 @@ $(document).ready(function () {
             <button id="minimize-settings" class="app-btn">-</button>
         </div>
     </div>
-    <div class="boxed-window app-scroll"><div class="main-ctn">
-    <div class="settings-sidebar">
-        <button id="visual" class="default-btn">visual</button>
-        <button id="accounts" class="default-btn">accounts</button>
-        <button id="network" class="default-btn">network</button>
-        <button id="applications" class="default-btn">applications</button>
-        <button id="scripts" class="default-btn">scripts</button>
-        <button id="security" class="default-btn">security</button>
-    </div>
-
-    <div class="settings-container visual-section">
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-        lorem lorem lorem lorem lorem
-    </div>
-</div>
-
-<script>
-    $(document).ready(function () {
-        $("#visual").click(function () {
-            $(".visual-section").toggle();
-        });
-    });
-</script>
-</div>
+    <div class="boxed-window app-scroll"></div>
 </section>
 
 
