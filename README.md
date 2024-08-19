@@ -2,10 +2,9 @@
 
 ### CyperPunk DE: The Ultimate Netrunner Choice!
 
-Exponencial complexity of all apps and the build system.
-Every action is complex; the apps are simple because they
-need to be, for turn out this project is unusable for now and then.
-It somehow works will be a nightmare to maintain.
+We have some problems now! The exponencial complexity of building new apps and the fixing build system.
+Every update is complex; the apps are simple because they need to be, turn out this project is unmatainable.
+If somehow works will be a nightmare to maintain.
 
 This project needs to archive some goals first:
 
