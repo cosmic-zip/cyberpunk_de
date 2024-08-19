@@ -5,7 +5,6 @@
 .ql-toolbar.ql-snow {
     background: var(--ancient-color) !important;
     border: solid 2px var(--ancient-color);
-    margin: -5px;
 }
 
 .ql-snow {
@@ -36,4 +35,13 @@ select.ql-ui {
     appearance: none; /* Removes default styling */
     -webkit-appearance: none; /* Removes default styling in Chrome, Safari, Opera */
     -moz-appearance: none; /* Removes default styling in Firefox */
+}
+
+.ql-editor {
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+.ql-toolbar {
+    display: none;
 }

@@ -163,6 +163,7 @@ $(document).ready(function () {
             <button id="minimize-compass" class="app-btn">-</button>
         </div>
     </div>
+    <div class="app-toolbar"></div>
     <div class="boxed-window app-scroll"><div class="compass-ctn">
     <iframe
         src="https://www.openstreetmap.org/export/embed.html?bbox=-52.4761962890625%2C-18.250219977065594%2C-41.70959472656251%2C-13.443052132777558&amp;layer=mapnik"
@@ -240,6 +241,16 @@ $(document).ready(function () {
     height: 30px;
 }
 
+.browser-toolbar {
+    background: var(--ancient-color);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    z-index: 1;
+    position: fixed;
+}
+
 </style>
 
 
@@ -251,7 +262,8 @@ $(document).ready(function () {
             <button id="minimize-browser" class="app-btn">-</button>
         </div>
     </div>
-    <div class="boxed-window app-scroll"><nav class="app-toolbar main-ctn">
+    <div class="app-toolbar"></div>
+    <div class="boxed-window app-scroll"><nav class="browser-toolbar main-ctn">
     <div class="main-ctn">
         <button class="search-btn">Back</button>
         <button class="search-btn">Foward</button>
@@ -3214,6 +3226,7 @@ terminal .terminal-output > div {
             <button id="minimize-terminal" class="app-btn">-</button>
         </div>
     </div>
+    <div class="app-toolbar"></div>
     <div class="boxed-window app-scroll"><div>
     <div id="term_demo" class="terminal"></div>
 </div>
@@ -3245,7 +3258,6 @@ $(document).ready(function () {
 .ql-toolbar.ql-snow {
     background: var(--ancient-color) !important;
     border: solid 2px var(--ancient-color);
-    margin: -5px;
 }
 
 .ql-snow {
@@ -3278,6 +3290,15 @@ select.ql-ui {
     -moz-appearance: none; /* Removes default styling in Firefox */
 }
 
+.ql-editor {
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+.ql-toolbar {
+    display: none;
+}
+
 </style>
 <style>
 /*!
@@ -3301,6 +3322,140 @@ select.ql-ui {
             <button id="minimize-editor" class="app-btn">-</button>
         </div>
     </div>
+    <div class="app-toolbar"><div role="toolbar" class="ql-toolbar ql-snow app-toolbar">
+    <span class="ql-formats"
+        ><span class="ql-header ql-picker"
+            ><span
+                class="ql-picker-label"
+                tabindex="0"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ql-picker-options-0"
+                ><svg viewBox="0 0 18 18">
+                    <polygon
+                        class="ql-stroke"
+                        points="7 11 9 13 11 11 7 11"
+                    ></polygon>
+                    <polygon
+                        class="ql-stroke"
+                        points="7 7 9 5 11 7 7 7"
+                    ></polygon></svg></span
+            ><span
+                class="ql-picker-options"
+                aria-hidden="true"
+                tabindex="-1"
+                id="ql-picker-options-0"
+                ><span
+                    tabindex="0"
+                    role="button"
+                    class="ql-picker-item"
+                    data-value="1"
+                ></span
+                ><span
+                    tabindex="0"
+                    role="button"
+                    class="ql-picker-item"
+                    data-value="2"
+                ></span
+                ><span
+                    tabindex="0"
+                    role="button"
+                    class="ql-picker-item ql-selected"
+                ></span></span></span
+        ><select class="ql-header" style="display: none">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option selected="selected"></option></select></span
+    ><span class="ql-formats"
+        ><button
+            type="button"
+            class="ql-bold"
+            aria-pressed="false"
+            aria-label="bold"
+        >
+            <svg viewBox="0 0 18 18">
+                <path
+                    class="ql-stroke"
+                    d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"
+                ></path>
+                <path
+                    class="ql-stroke"
+                    d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"
+                ></path>
+            </svg></button
+        ><button
+            type="button"
+            class="ql-italic"
+            aria-pressed="false"
+            aria-label="italic"
+        >
+            <svg viewBox="0 0 18 18">
+                <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line>
+                <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line>
+                <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line>
+            </svg></button
+        ><button
+            type="button"
+            class="ql-underline"
+            aria-pressed="false"
+            aria-label="underline"
+        >
+            <svg viewBox="0 0 18 18">
+                <path
+                    class="ql-stroke"
+                    d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"
+                ></path>
+                <rect
+                    class="ql-fill"
+                    height="1"
+                    rx="0.5"
+                    ry="0.5"
+                    width="12"
+                    x="3"
+                    y="15"
+                ></rect>
+            </svg></button></span
+    ><span class="ql-formats"
+        ><button
+            type="button"
+            class="ql-image"
+            aria-pressed="false"
+            aria-label="image"
+        >
+            <svg viewBox="0 0 18 18">
+                <rect
+                    class="ql-stroke"
+                    height="10"
+                    width="12"
+                    x="3"
+                    y="4"
+                ></rect>
+                <circle class="ql-fill" cx="6" cy="7" r="1"></circle>
+                <polyline
+                    class="ql-even ql-fill"
+                    points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"
+                ></polyline>
+            </svg></button
+        ><button
+            type="button"
+            class="ql-code-block"
+            aria-pressed="false"
+            aria-label="code-block"
+        >
+            <svg viewBox="0 0 18 18">
+                <polyline
+                    class="ql-even ql-stroke"
+                    points="5 7 3 9 5 11"
+                ></polyline>
+                <polyline
+                    class="ql-even ql-stroke"
+                    points="13 7 15 9 13 11"
+                ></polyline>
+                <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line>
+            </svg></button
+    ></span>
+</div>
+</div>
     <div class="boxed-window app-scroll"><div class="editor-textarea">
     <div id="editor"></div>
     <script>
@@ -3345,6 +3500,7 @@ $(document).ready(function () {
             <button id="minimize-settings" class="app-btn">-</button>
         </div>
     </div>
+    <div class="app-toolbar"></div>
     <div class="boxed-window app-scroll"></div>
 </section>
 
@@ -3381,6 +3537,7 @@ $(document).ready(function () {
             <button id="minimize-calendar" class="app-btn">-</button>
         </div>
     </div>
+    <div class="app-toolbar"></div>
     <div class="boxed-window app-scroll"></div>
 </section>
 

@@ -3,8 +3,12 @@ import os, sys, time, datetime
 
 
 def read_file(path: str) -> str:
-    with open(path, "r") as file:
-        return file.read()
+    try:
+        with open(path, "r") as file:
+            return file.read()
+    except Exception as err:
+        print(f"Warning! {err}")
+        return ""
 
 
 def create_app(app_name: str):
@@ -60,11 +64,13 @@ def build_apps() -> str:
             html_css = f"{html_css}<style>\n{file_content}\n</style>\n"
 
         app_content = read_file(f"src/apps/{app}/{app}.html")
+        app_toolbar = read_file(f"src/apps/{app}/toolbar.html")
 
         final_app = app_container.replace("@@APP_CONTAINER", app_content)
         final_app = final_app.replace("@@APP_SCRIPTS", html_script)
         final_app = final_app.replace("@@APP_STYLES", html_css)
         final_app = final_app.replace("@@APP_NAME", app)
+        final_app = final_app.replace("@@APP_TOOLBAR", app_toolbar)
 
         final_app_list = f"{final_app_list}\n{final_app}\n"
 

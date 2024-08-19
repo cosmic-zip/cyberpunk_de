@@ -49,12 +49,5 @@
 }
 
 .app-toolbar {
-    background: var(--ancient-color);
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    z-index: 1;
-    margin: -5px;
-    position: relative;
+    display: block !important;
 }
