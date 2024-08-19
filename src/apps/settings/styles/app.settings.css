@@ -1,24 +1,32 @@
 .settings-sidebar {
-    width: 25vw;
     overflow-x: hidden;
     overflow-y: scroll;
-    margin-right: 10px;
+    margin: 10px;
+    width: 200px;
 }
 
-.settings-option {
+.default-btn {
     width: 100%;
     text-align: left;
     padding-left: 20px;
     font-size: 15px;
     font-weight: bold;
-    border: solid 2px var(--main-bg);
+    border: solid 2px var(--ancient-color);
     height: 35px;
     background: var(--ancient-color);
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
-.settings-option:hover {
-    background: var(--main-bg);
+.default-btn:hover {
+    background: var(--main-hover);
     border: solid 2px var(--ancient-color);
     color: var(--main-text-light);
+}
+
+.settings-container {
+    margin: 10px;
+    border: solid 2px var(--ancient-color);
+    border-radius: 10px;
+    padding: 20px;
 }

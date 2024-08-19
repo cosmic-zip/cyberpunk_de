@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import os, sys
+import os, sys, time, datetime
 
 
 def read_file(path: str) -> str:
@@ -149,6 +149,13 @@ def cli():
         case 'build':
             print(build_cyberpunk_desktop())
             return
+        case 'loop':
+            while True:
+                build_cyberpunk_desktop()
+                now = datetime.datetime.now()
+                print("Building ...")
+                print(f"{now} :: Done")
+                time.sleep(10)
         case 'new':
             if(len(options)) < 3:
                 print("Missing app name")
