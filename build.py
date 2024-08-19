@@ -7,7 +7,7 @@ def read_file(path: str) -> str:
         with open(path, "r") as file:
             return file.read()
     except Exception as err:
-        print(f"Warning! {err}")
+        # print(f"Warning! {err}")
         return ""
 
 
