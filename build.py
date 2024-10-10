@@ -161,7 +161,7 @@ def cli():
                 now = datetime.datetime.now()
                 print("Building ...")
                 print(f"{now} :: Done")
-                time.sleep(10)
+                time.sleep(5)
         case 'new':
             if(len(options)) < 3:
                 print("Missing app name")

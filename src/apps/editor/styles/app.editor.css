@@ -38,10 +38,7 @@ select.ql-ui {
 }
 
 .ql-editor {
-    min-height: 100vh;
+    height: 80vh;
     font-size: 20px;
-}
-
-.ql-toolbar {
-    display: none;
+    overflow-y: scroll;
 }
