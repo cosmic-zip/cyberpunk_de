@@ -164,7 +164,17 @@ $(document).ready(function () {
         </div>
     </div>
     <div class="app-toolbar"></div>
-    <div class="boxed-window app-scroll"></div>
+    <div class="boxed-window app-scroll"><script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: "dayGridMonth",
+        });
+        calendar.render();
+    });
+</script>
+<div id="calendar"></div>
+</div>
 </section>
 
 
@@ -3952,7 +3962,7 @@ $(document).ready(function () {
         <img src="icons/settings.png" />
         Settings
     </button>
-    <button class="wo-main-header-btn" onclick="alert('btn')">
+    <button class="wo-main-header-btn" id="close-witch_oracle">
         <img src="icons/exit.png" />
         Exit
     </button>
