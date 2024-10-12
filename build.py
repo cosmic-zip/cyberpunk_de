@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import os, sys, time, datetime
+import http.server
+import socketserver
 
 
 def read_file(path: str) -> str:
@@ -136,6 +138,27 @@ def build_cyberpunk_desktop() -> str:
 
 
 
+def http_server():
+    PORT = 8000
+
+    web_dir = os.path.join(os.path.dirname(__file__), 'src')
+    os.chdir(web_dir)
+
+    Handler = http.server.SimpleHTTPRequestHandler
+    httpd = socketserver.TCPServer(("", PORT), Handler)
+    print("serving at port", PORT)
+    httpd.serve_forever()
+
+def loop_server():
+    while True:
+        build_cyberpunk_desktop()
+        now = datetime.datetime.now()
+        print("Building ...")
+        print(f"{now} :: Done")
+        time.sleep(5)
+
+
+import threading
 
 def cli():
     options = sys.argv
@@ -169,5 +192,10 @@ def cli():
             print(help)
         case 'help':
             print(help)
+
+        case 'loop_server':
+            threading.Thread(http_server())
+            threading.Thread(loop_server())
+
 
 cli()

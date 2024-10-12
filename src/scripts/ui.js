@@ -46,10 +46,7 @@ $(document).ready(function () {
     if (number >= 1 && number <= images.length) {
       $("body").css("background-image", images[number - 1]);
     } else {
-      console.log(
-        "Invalid number. Please provide a number between 1 and " +
-          images.length,
-      );
+      console.log("Invalid number. Please provide a number between 1 and " + images.length);
     }
   }
 
@@ -79,7 +76,7 @@ jQuery(function ($, undefined) {
       greetings: "",
       name: "witch",
       height: 800,
-      prompt: "Witch :: Witch_Craft $ ",
+      prompt: "[witch_craft] ❆ [localnet] $ ",
     },
   );
 });
