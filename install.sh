@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt update
 sudo apt install libwebkit2gtk-4.1-dev \
   build-essential \
